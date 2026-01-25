@@ -1,91 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Website</title>
+<meta charset="UTF-8">
+<title>My First Website</title>
 
-    <!-- Crated by shivansh -->
-    <meta name="author" content="shivansh">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Crated by shivansh -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #4facfe, #00f2fe);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+<style>
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    font-family:Arial,sans-serif;
+}
 
-        .box {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 1rem;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            width: 90%;
-            max-width: 420px;
-        }
+.box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    width:90%;
+    max-width:420px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
 
-        h1 {
-            font-size: 2.2rem;
-            color: #333;
-        }
+h1{
+    font-size:2.2rem;
+    color:#333;
+}
 
-        p {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-        }
+p{
+    font-size:1.1rem;
+    color:#555;
+    line-height:1.6;
+}
 
-        button {
-            margin-top: 1.5rem;
-            padding: 12px 24px;
-            font-size: 1.1rem;
-            border: none;
-            border-radius: 10px;
-            background: #4facfe;
-            color: white;
-            cursor: pointer;
-        }
+button{
+    margin-top:20px;
+    padding:12px 24px;
+    font-size:1.1rem;
+    border:none;
+    border-radius:10px;
+    background:#4facfe;
+    color:white;
+}
 
-        button:hover {
-            background: #3a8dde;
-        }
-
-        .footer {
-            margin-top: 1.5rem;
-            font-size: 1rem;
-            color: #777;
-        }
-    </style>
+.footer{
+    margin-top:20px;
+    font-size:1rem;
+    color:#777;
+}
+</style>
 </head>
 
 <body>
 
-    <div class="box">
-        <h1>Welcome 🎉</h1>
+<div class="box">
+    <h1>Welcome 🎉</h1>
+    <p>
+        This HTML page works offline and opens directly in Chrome.
+        It is responsive for mobile and PC.
+    </p>
 
-        <p>
-            This HTML page works offline and opens directly in Chrome.
-            It is responsive for both mobile and PC.
-        </p>
+    <button onclick="alert('Website Crated by shivansh 😄')">
+        Click Me
+    </button>
 
-        <button onclick="showMessage()">Click Me</button>
-
-        <div class="footer">
-            Crated by shivansh
-        </div>
+    <div class="footer">
+        Crated by shivansh
     </div>
-
-    <script>
-        function showMessage() {
-            alert("Hello! Website Crated by shivansh 😄");
-        }
-    </script>
+</div>
 
 </body>
 </html>
