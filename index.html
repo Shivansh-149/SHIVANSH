@@ -2,47 +2,50 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Website with Video</title>
+<title>My Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    flex-direction: column;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
 }
 
-h1 {
-    font-size: 2.2rem;
-    color: #333;
-    margin-bottom: 20px;
+h1{
+    font-size:2.2rem;
+    color:#333;
+    margin-bottom:20px;
 }
 
-button {
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 10px;
-    background: #4facfe;
-    color: white;
-    cursor: pointer;
-    margin-bottom: 20px;
+button, a.apk-btn{
+    padding:14px 26px;
+    font-size:1.1rem;
+    border:none;
+    border-radius:12px;
+    background:#4facfe;
+    color:white;
+    cursor:pointer;
+    text-decoration:none;
+    margin:10px;
+    display:inline-block;
 }
 
-button:hover {
-    background: #3a8dde;
+button:hover, a.apk-btn:hover{
+    background:#3a8dde;
 }
 
-video {
-    width: 90%;
-    max-width: 500px;
-    border-radius: 15px;
-    display: none; /* Hidden initially */
+video{
+    width:90%;
+    max-width:500px;
+    border-radius:15px;
+    margin-top:20px;
+    display:none;
 }
 </style>
 </head>
@@ -51,18 +54,24 @@ video {
 
 <h1>Crated by shivansh</h1>
 
+<!-- Video button -->
 <button onclick="playVideo()">Play Video</button>
 
 <video id="myVideo" controls>
     <source src="op.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    Your browser does not support video.
 </video>
 
+<!-- APK download button -->
+<a href="My.apk" download class="apk-btn">
+    Download APK
+</a>
+
 <script>
-function playVideo() {
-    const video = document.getElementById("myVideo");
-    video.style.display = "block";  // Show the video
-    video.play();                   // Start playing
+function playVideo(){
+    const v = document.getElementById("myVideo");
+    v.style.display = "block";
+    v.play();
 }
 </script>
 
